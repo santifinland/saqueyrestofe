@@ -10,7 +10,7 @@ app.config(function ($routeProvider, $locationProvider, $httpProvider) {
 	$httpProvider.responseInterceptors.push('httpInterceptor');
 
 	$routeProvider
-		.when('/', { templateUrl: 'views/index.html', controller: 'site' })
+		.when('/', { templateUrl: 'views/site.html', controller: 'site' })
 		.when('/login', { templateUrl: 'views/auth.html', controller: 'auth' })
 		.otherwise({ redirectTo: '/' });
 
