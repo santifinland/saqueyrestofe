@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module('dashboardApp', [
+var app = angular.module('siteApp', [
 	'ngCookies',
 	'ngResource',
 	'ngSanitize'
@@ -10,7 +10,7 @@ app.config(function ($routeProvider, $locationProvider, $httpProvider) {
 	$httpProvider.responseInterceptors.push('httpInterceptor');
 
 	$routeProvider
-		.when('/', { templateUrl: 'views/dashboard.html', controller: 'dashboard' })
+		.when('/', { templateUrl: 'views/index.html', controller: 'site' })
 		.when('/login', { templateUrl: 'views/auth.html', controller: 'auth' })
 		.otherwise({ redirectTo: '/' });
 

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('dashboardApp').factory('httpInterceptor', function httpInterceptor ($q, $window, $location) {
+angular.module('siteApp').factory('httpInterceptor', function httpInterceptor ($q, $window, $location) {
 	return function (promise) {
 		var success = function (response) {
 			return response;

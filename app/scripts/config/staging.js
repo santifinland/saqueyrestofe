@@ -1,9 +1,9 @@
 var config = config || {};
 
 config.staging = {
-	app: 'likeastore-staging',
+	app: 'backend-staging',
 
-	analytics: {
-		url: 'http://analytics.stage.likeastore.com'
+	backend: {
+		url: 'http://staging.domain.com'
 	}
 };

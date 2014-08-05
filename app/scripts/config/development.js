@@ -1,9 +1,9 @@
 var config = config || {};
 
 config.development = {
-	app: 'likeastore-development',
+	app: 'backend-development',
 
-	analytics: {
-		url: 'http://localhost:8000/api/'
+	backend: {
+		url: 'http://localhost:8000'
 	}
 };

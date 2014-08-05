@@ -1,11 +1,11 @@
 'use strict';
 
-angular.module('dashboardApp').factory('authorization', function ($http, config) {
-	var url = config.analytics.url;
+angular.module('siteApp').factory('authorization', function ($http, config) {
+	var url = config.backend.url;
 
 	return {
 		login: function (credentials) {
-			return $http.post(url + '/api/account/login', credentials);
+			return $http.post(url + '/api/account/login/', credentials);
 		}
 	};
 });
