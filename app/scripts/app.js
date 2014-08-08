@@ -7,6 +7,7 @@ var app = angular.module('siteApp', [
 ]);
 
 app.config(function ($routeProvider, $locationProvider, $httpProvider) {
+
 	$httpProvider.responseInterceptors.push('httpInterceptor');
 
 	$routeProvider

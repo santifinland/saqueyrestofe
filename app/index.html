@@ -21,6 +21,8 @@
         <!-- endbuild -->
 
         <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
@@ -42,7 +44,7 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container" ng-view=""></div>
+    <div class="container" ng-view="site"></div>
 
     <script src="bower_components/angular/angular.js"></script>
 
@@ -60,7 +62,6 @@
     <script src="scripts/config/production.js"></script>
 
     <script src="scripts/services/api.js"></script>
-    <script src="scripts/services/analytics.js"></script>
 
     <script src="scripts/infrastructure/authorization.js"></script>
     <script src="scripts/infrastructure/config.js"></script>
@@ -68,6 +69,7 @@
 
     <script src="scripts/controllers/auth.js"></script>
     <script src="scripts/controllers/site.js"></script>
+
     <!-- endbuild -->
 </body>
 </html>
