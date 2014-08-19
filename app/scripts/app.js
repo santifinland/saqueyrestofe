@@ -3,7 +3,7 @@
 var app = angular.module('siteApp', [
 	'ngCookies',
 	'ngResource',
-	'ngSanitize'
+	'ngSanitize',
 ]);
 
 app.config(function ($routeProvider, $locationProvider, $httpProvider) {
